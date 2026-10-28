@@ -10,7 +10,13 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Segoe UI",Arial,sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}.container{width:min(1100px,90%);margin:auto}
 header{position:sticky;top:0;z-index:5;background:rgba(16,36,59,.97);color:white;box-shadow:0 4px 18px #10243b18}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:1.12rem;font-weight:800;letter-spacing:-.03em}.brand span{color:#8fc4ed}.links{display:flex;gap:25px;font-size:.92rem;color:#d9e5f0}.links a:hover{color:#8fc4ed}
 .hero{background:radial-gradient(circle at 83% 20%,#284b6a 0,transparent 28%),linear-gradient(125deg,var(--navy),#142f4b 70%,#1a3b59);color:white;padding:100px 0 95px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;align-items:center;gap:55px}.pill{display:inline-block;border:1px solid #7196b8;border-radius:99px;padding:6px 13px;color:#d6e9f8;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}.hero h1{font-size:clamp(2.8rem,6vw,5.2rem);line-height:1.04;letter-spacing:-.065em;margin:23px 0}.hero h1 span{color:#8fc4ed}.hero p{max-width:620px;color:#d1deea;font-size:1.13rem;margin:0 0 28px}.button{display:inline-block;padding:12px 20px;border-radius:10px;background:#8fc4ed;color:#10243b;font-weight:800;transition:.2s}.button:hover{transform:translateY(-2px);background:#b4dcf7}
-.hero-art{min-height:300px;border:1px solid #ffffff28;border-radius:28px;background:linear-gradient(145deg,#ffffff12,#ffffff04);display:grid;place-items:center;position:relative}.orbit{width:220px;height:220px;border:1px solid #8fc4ed80;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #8fc4ed45;border-radius:50%}.orbit:before{inset:20px}.orbit:after{inset:42px}.science{z-index:1;text-align:center;font-size:3.4rem}.science small{display:block;font-size:.8rem;color:#d5e6f5;letter-spacing:.12em;text-transform:uppercase;margin-top:8px}
+
+/* Estilo para la foto de perfil en la portada */
+.hero-art{min-height:300px;border:1px solid #ffffff28;border-radius:28px;background:linear-gradient(145deg,#ffffff12,#ffffff04);display:grid;place-items:center;position:relative;padding:25px}
+.profile-container{text-align:center}
+.profile-pic{width:180px;height:180px;border-radius:50%;object-fit:cover;border:4px solid #8fc4ed;box-shadow:0 8px 25px rgba(0,0,0,0.3);display:block;margin:0 auto 12px}
+.profile-container small{display:block;font-size:.8rem;color:#d5e6f5;letter-spacing:.12em;text-transform:uppercase}
+
 section{padding:76px 0}.heading{margin-bottom:30px}.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.15em;color:#4b7da7;font-weight:800}.heading h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.05em;line-height:1.2;margin:8px 0 12px;color:var(--navy)}.heading p{max-width:680px;color:var(--muted);margin:0}
 .about-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:40px;align-items:start}.about-card{background:var(--navy);color:white;padding:28px;border-radius:20px;box-shadow:var(--shadow)}.about-card .symbol{font-size:2.4rem;color:#8fc4ed}.about-card h3{margin:5px 0 8px}.about-card p{color:#d2deea;margin:0;font-size:.95rem}.about-copy{color:var(--muted);font-size:1.04rem}.about-copy p:first-child{margin-top:0}
 .projects{background:#eaf0f6}.year{display:flex;align-items:center;gap:15px;margin:35px 0 18px}.year h3{font-size:1.5rem;color:var(--navy);margin:0}.year span{height:1px;background:#cbd8e4;flex:1}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{background:white;border:1px solid var(--line);border-radius:17px;padding:25px;box-shadow:0 5px 20px #10243b08;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.icon{width:46px;height:46px;display:grid;place-items:center;background:var(--ice);border-radius:13px;font-size:1.4rem;margin-bottom:15px}.card h4{font-size:1.08rem;line-height:1.4;color:var(--navy);margin:0 0 10px}.card p{font-size:.94rem;color:var(--muted);margin:0}.tag{display:inline-block;margin-top:17px;border-radius:99px;background:#edf4fa;color:#315a7d;padding:4px 10px;font-size:.76rem;font-weight:800}
@@ -21,15 +27,38 @@ section{padding:76px 0}.heading{margin-bottom:30px}.eyebrow{font-size:.78rem;tex
 .media-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(120px, 1fr));gap:6px;padding:6px;background:#f0f4f8}
 .media-grid img{border-radius:8px;height:110px;object-fit:cover;width:100%}
 
+/* Estilos para la sección de Contacto */
+.contact-section{background:white;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.contact-card{background:var(--ice);border:1px solid var(--line);border-radius:20px;padding:32px;display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:20px}
+.contact-info p{margin:0 0 8px;font-size:1.05rem;color:var(--ink)}
+.email-link{display:inline-flex;align-items:center;gap:8px;font-size:1.15rem;font-weight:700;color:var(--navy);background:white;padding:12px 20px;border-radius:12px;border:1px solid var(--line);box-shadow:0 4px 12px rgba(16,36,59,.04);transition:.2s}
+.email-link:hover{background:var(--navy);color:white;transform:translateY(-2px)}
+
 .closing{padding:70px 0}.closing-box{padding:42px;border-radius:23px;background:var(--navy);color:white;display:flex;align-items:center;justify-content:space-between;gap:25px}.closing-box h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.2;letter-spacing:-.04em;margin:0 0 10px}.closing-box p{color:#d1deea;max-width:650px;margin:0}.closing-box .button{flex-shrink:0;background:white;color:var(--navy)}footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.87rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-@media(max-width:760px){.links{gap:13px;font-size:.83rem}.hero{padding:68px 0}.hero-grid,.about-grid{grid-template-columns:1fr;gap:30px}.hero-art{min-height:250px}.grid{grid-template-columns:1fr}section{padding:55px 0}.closing-box{padding:28px;align-items:flex-start;flex-direction:column}}
+@media(max-width:760px){.links{gap:13px;font-size:.83rem}.hero{padding:68px 0}.hero-grid,.about-grid{grid-template-columns:1fr;gap:30px}.hero-art{min-height:250px}.grid{grid-template-columns:1fr}section{padding:55px 0}.closing-box{padding:28px;align-items:flex-start;flex-direction:column}.contact-card{flex-direction:column;align-items:flex-start}}
 @media(max-width:430px){.nav{align-items:flex-start;flex-direction:column;padding:13px 0;gap:6px}.links{width:100%;justify-content:space-between}.orbit{width:190px;height:190px}}
 </style>
 </head>
 <body>
-<header><nav class="container nav" aria-label="Navegación principal"><a class="brand" href="#inicio">Stefania<span>.</span></a><div class="links"><a href="#sobre-mi">Sobre mí</a><a href="#proyectos">Proyectos</a><a href="#cierre">Mi recorrido</a></div></nav></header>
+<header><nav class="container nav" aria-label="Navegación principal"><a class="brand" href="#inicio">Stefania<span>.</span></a><div class="links"><a href="#sobre-mi">Sobre mí</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a><a href="#cierre">Mi recorrido</a></div></nav></header>
 <main>
-<section class="hero" id="inicio"><div class="container hero-grid"><div><span class="pill">Portfolio digital · 2025—2026</span><h1>Hola, soy<br><span>Stefania Gonzalez.</span></h1><p>Estudiante de secundaria con orientación en Ciencias Naturales. Un espacio para compartir mis proyectos, experiencias y aprendizajes.</p><a class="button" href="#proyectos">Conocé mis proyectos ↓</a></div><div class="hero-art" aria-label="Ilustración decorativa de ciencias"><div class="orbit"><div class="science">🔬<small>Explorar · Aprender</small></div></div></div></div></section>
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div>
+      <span class="pill">Portfolio digital · 2025—2026</span>
+      <h1>Hola, soy<br><span>Stefania Gonzalez.</span></h1>
+      <p>Estudiante de secundaria con orientación en Ciencias Naturales. Un espacio para compartir mis proyectos, experiencias y aprendizajes.</p>
+      <a class="button" href="#proyectos">Conocé mis proyectos ↓</a>
+    </div>
+    <div class="hero-art" aria-label="Foto de perfil de Stefania">
+      <div class="profile-container">
+        <img src="perfil.jpg" alt="Stefania Gonzalez" class="profile-pic">
+        <small>Explorar · Aprender</small>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="sobre-mi"><div class="container"><div class="heading"><span class="eyebrow">Un poco sobre mí</span><h2>Aprender es abrir nuevas puertas.</h2></div><div class="about-grid"><aside class="about-card"><div class="symbol">✦</div><h3>Curiosa y comprometida</h3><p>Me interesa descubrir nuevos contenidos, investigar y aprender herramientas que me ayuden a crecer.</p></aside><div class="about-copy"><p>Soy Stefania, una estudiante de secundaria.</p><p>Me considero una persona curiosa, comprometida y con ganas de aprender y encarar nuevos desafíos.</p><p>Disfruto de trabajar en proyectos en los que pueda investigar nuevos contenidos, además de aprender a utilizar nuevas herramientas. Este portfolio reúne mis proyectos y la experiencia adquirida en mis ACAP.</p></div></div></div></section>
 <section class="projects" id="proyectos"><div class="container"><div class="heading"><span class="eyebrow">Experiencias y aprendizajes</span><h2>Mis proyectos</h2><p>Una selección de actividades, talleres y visitas que formaron parte de mi recorrido durante 2025 y 2026.</p></div>
 <div class="year"><h3>2025</h3><span></span></div><div class="grid">
@@ -64,7 +93,7 @@ section{padding:76px 0}.heading{margin-bottom:30px}.eyebrow{font-size:.78rem;tex
 <span class="tag">Salud comunitaria y prevención</span></article>
 
 <article class="card"><div class="icon">🎓</div><h4>CBC UBA</h4><p>Recibimos orientación sobre la vida universitaria y la articulación entre el nivel secundario y el superior. Profundizamos en la estructura del CBC como primer año académico de la UBA y conocimos las diferencias entre tecnicaturas, carreras de grado y trayectos de posgrado según sus planes de estudio y duración. La visita me ayudó a despejar dudas sobre los estudios superiores y evaluar opciones para mi futuro profesional.</p><span class="tag">Orientación vocacional</span></article>
-    <img src="uca.jpeg" alt="uca">
+
 <article class="card"><div class="icon">🕊️</div><h4>Colegio Argentino Árabe Islámico Omar Bin Al Jattab A-120</h4><p>Fue una jornada de sensibilización e historia en conmemoración de la Nakba, centrada en la memoria colectiva y la realidad del pueblo palestino. A través de un documental con material de archivo y testimonios, analizamos el contexto y las consecuencias de este proceso histórico. Cerramos con un debate sobre el rol de los jóvenes, los derechos humanos y las acciones de concientización e integración que podemos promover desde nuestra comunidad.</p>
 <div class="card-media">
     <img src="colgeioarabe.jpeg" alt="Colegio Árabe">
@@ -82,9 +111,33 @@ section{padding:76px 0}.heading{margin-bottom:30px}.eyebrow{font-size:.78rem;tex
 </div>
 <span class="tag">Ambiente y trabajo en equipo</span></article>
 
-<article class="card"><div class="icon">📚</div><h4>Taller de técnicas de estudio para universitarios — UCA</h4><p>En este taller aprendimos metodologías para conectar conceptos complejos y estructurar esquemas de síntesis. Profundizamos en la importancia de pasar del aprendizaje memorístico a una comprensión profunda y analítica, incorporando herramientas para diseñar planes de estudio eficientes.</p><span class="tag">Técnicas de estudio</span></article>
+<article class="card"><div class="icon">📚</div><h4>Taller de técnicas de estudio para universitarios — UCA</h4><p>En este taller aprendimos metodologías para conectar conceptos complejos y estructurar esquemas de síntesis. Profundizamos en la importancia de pasar del aprendizaje memorístico a una comprensión profunda y analítica, incorporando herramientas para diseñar planes de estudio eficientes.</p>
+<div class="card-media">
+    <img src="uca.jpeg" alt="Taller UCA">
+</div>
+<span class="tag">Técnicas de estudio</span></article>
+
 <article class="card"><div class="icon">🤖</div><h4>Taller de inteligencia artificial y empleabilidad</h4><p>Analizamos el impacto de las herramientas de inteligencia artificial en el ámbito laboral y la búsqueda de empleo. Aprendimos a utilizarlas para organizar y optimizar el trabajo, destacando la importancia del pensamiento crítico, la verificación de datos y el uso ético y responsable de la tecnología. También exploramos la comunicación en redes sociales, la huella digital, la seguridad en internet, la privacidad de los datos personales y la gestión consciente de la presencia digital.</p><span class="tag">Tecnología y empleabilidad</span></article>
 </div></div></section>
+
+
+<section class="contact-section" id="contacto">
+  <div class="container">
+    <div class="heading">
+      <span class="eyebrow">Contacto</span>
+      <h2>Sigamos en contacto</h2>
+    </div>
+    <div class="contact-card">
+      <div class="contact-info">
+        <p>¡Gracias por visitar mi portfolio! Si querés ponerte en contacto, consultar sobre mis proyectos o compartir ideas, podés escribirme a mi correo electrónico:</p>
+      </div>
+      <a class="email-link" href="mailto:stefaniaagonz89@gmail.com">
+        ✉️ stefaniaagonz89@gmail.com
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="closing" id="cierre"><div class="container"><div class="closing-box"><div><h2>Cada experiencia suma.</h2><p>Este portfolio refleja parte de mi recorrido: experiencias que me permitieron descubrir temas nuevos, desarrollar habilidades y seguir pensando en mi futuro académico y profesional.</p></div><a class="button" href="#inicio">Volver al inicio ↑</a></div></div></section>
 </main><footer><div class="container foot"><span>© 2026 · Stefania Gonzalez</span><span>Portfolio digital · Estudiante de Ciencias Naturales</span></div></footer>
 </body></html>
